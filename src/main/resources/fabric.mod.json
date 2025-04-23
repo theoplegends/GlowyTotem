@@ -1,0 +1,31 @@
+{
+  "schemaVersion": 1,
+  "id": "glowytotem",
+  "version": "${version}",
+  "name": "GlowyTotem",
+  "description": "",
+  "authors": [],
+  "contact": {},
+  "license": "unlicense",
+  "icon": "assets/glowytotem/icon.png",
+  "environment": "client",
+  "entrypoints": {
+    "fabric-datagen": [
+      "op.legends.glowytotem.client.GlowytotemDataGenerator"
+    ],
+    "client": [
+      "op.legends.glowytotem.client.GlowytotemClient"
+    ],
+    "main": [
+      "op.legends.glowytotem.Glowytotem"
+    ]
+  },
+  "mixins": [
+    "glowytotem.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=${loader_version}",
+    "fabric": "*",
+    "minecraft": "${minecraft_version}"
+  }
+}
